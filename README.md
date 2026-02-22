@@ -17,6 +17,9 @@ SUBSYSTEM=="input", KERNEL=="js*", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c
 Trigger the rule
 
 sudo udevadm control --reload-rules
+
+
+
 sudo udevadm trigger
 
 
