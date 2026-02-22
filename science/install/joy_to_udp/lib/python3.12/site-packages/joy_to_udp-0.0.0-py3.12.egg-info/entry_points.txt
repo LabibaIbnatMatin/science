@@ -1,0 +1,2 @@
+[console_scripts]
+joy_udp = joy_to_udp.joy_udp:main
