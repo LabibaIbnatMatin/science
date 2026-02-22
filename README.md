@@ -25,3 +25,8 @@ sudo udevadm trigger
 How to run joystick 
 ros2 run joy joy_node --ros-args -p dev:=/dev/input/science
 for seeing the topic ros topic echo /joy
+
+science :
+ros2 run joy_to_udp joy_udp
+serial:
+ros2 run joy_to_teensy joy_node
