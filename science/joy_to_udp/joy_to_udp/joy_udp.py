@@ -20,50 +20,108 @@ class JoyUdpBridge(Node):
         
         self.get_logger().info("Bridge Node Started. Direct Button Direction Logic Active.")
 
-    def get_pair_val(self, pos_btn, neg_btn):
-        """
-        Logic: 
-        Pressed Positive Button -> 2000
-        Pressed Negative Button -> 1000
-        None or Both -> 1500
-        """
-        if pos_btn and not neg_btn:
-            return 2000
-        elif neg_btn and not pos_btn:
-            return 1000
-        return 1500
-
     def joy_callback(self, msg):
-       
-        s1 = self.get_pair_val(msg.buttons[0], msg.buttons[1])
-        s2 = s1 
-
-       
-        d1 = self.get_pair_val(msg.buttons[2], msg.buttons[3])
-
-       
-        d2 = self.get_pair_val(msg.buttons[4], msg.buttons[5])
-
-      
-        st1 = self.get_pair_val(msg.buttons[8], msg.buttons[9])
-        st2 = st1 
-        
-      
-        st3 = self.get_pair_val(msg.buttons[10], msg.buttons[11])
-        st4 = st3
-
-       
-        relay = 2000 if msg.buttons[6] else 1500
-
-        
-        packet = f"s[{s1},{s2},{d1},{d2},{st1},{st2},{st3},{st4},{relay}]"
-
-     
-        self.get_logger().info(f"Published: {packet}")
-
-       
         try:
+            # Note: Joy msg uses .buttons (list) and .axes (list)
+            # Ensure your controller is connected or these indices will throw an IndexError
+            
+            # S-Buttons
+            s1 = 2000 if msg.buttons[0] else 1500
+            s2 = 2000 if msg.buttons[1] else 1500 
+
+            # D-Buttons
+            d11 = 2000 if msg.buttons[2] else 1500
+            d12 = 1000 if msg.buttons[3] else 1500   
+
+            # D2-Buttons
+            d21 = 2000 if msg.buttons[11] else 1500
+            d22 = 1000 if msg.buttons[5] else 1500
+            relay = 2000 if msg.buttons[7] else 1500
+            relay1 = 2000 if msg.buttons[6] else 1500
+            btn_8= 2000 if msg.buttons[8] else 1500
+
+            # Steering/Axis Logic
+            # Check if axis index 4 and button 9 exist on your specific controller
+            axis_val = msg.axes[3] if len(msg.axes) > 4 else 0.0
+            btn_9 = msg.buttons[8] if len(msg.buttons) > 9 else 0
+            btn_10= msg.buttons[9] if len(msg.buttons) > 10 else 0
+    
+            btn_11= msg.buttons[10] if len(msg.buttons) > 11 else 0
+            btn_12 = msg.buttons[11] if len(msg.buttons) > 12 else 0
+            
+
+
+        # st_pos_1 = 2000 if axis_val == 1.0 and btn_9 else 1500
+
+
+            st_pos_1 = 1500
+            st_pos_2 = 1500
+            st_pos_3 = 1500
+            st_pos_4 = 1500
+
+            
+            if btn_9:
+                if axis_val == 1.0:
+                    st_pos_1 = 2000
+                elif axis_val == -1.0:
+                    st_pos_1 = 1000 
+                else:
+                    st_pos_1 = 1500
+              
+
+            
+            if btn_10:
+                if axis_val == 1.0:
+                    st_pos_2 = 2000
+                elif axis_val == -1.0:
+                    st_pos_2 = 1000 
+                else:
+                    st_pos_2 = 1500
+              
+            if btn_11:
+                if axis_val == 1.0:
+                    st_pos_3 = 2000
+                elif axis_val == -1.0:
+                    st_pos_3 = 1000 
+                else:
+                    st_pos_3 = 1500
+            
+            if btn_12:
+                if axis_val == 1.0:
+                    st_pos_4 = 2000
+                elif axis_val == -1.0:
+                    st_pos_4 = 1000 
+                else:
+                    st_pos_4 = 1500
+              
+
+
+          
+
+
+            
+            # Assigning to your specific variables
+            
+            
+            # Relay
+          
+
+            # Constructing the packet
+            # Format: s[val1,val2,...]
+            packet_data = [
+                s1, s2, d11, d12, d21, d22,
+                st_pos_1, st_pos_2, st_pos_3, st_pos_4,
+                relay,relay1
+            ]
+            
+            # Convert list to comma-separated string inside s[]
+            packet = f"s[{','.join(map(str, packet_data))}]"
+
+            self.get_logger().info(f"Published: {packet}")
             self.sock.sendto(packet.encode(), (self.target_ip, self.target_port))
+
+        except IndexError as e:
+            self.get_logger().warn(f"Index Error: Check if your controller has enough buttons/axes. {e}")
         except Exception as e:
             self.get_logger().error(f"UDP Error: {e}")
 
@@ -74,8 +132,9 @@ def main(args=None):
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
-    node.destroy_node()
-    rclpy.shutdown()
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
