@@ -1,0 +1,37 @@
+[1.112s] Invoking command in '/home/ariful/Urc26/science/science/joy_to_udp': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ariful/Urc26/science/science/build/joy_to_udp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/joy_to_udp build --build-base /home/ariful/Urc26/science/science/build/joy_to_udp/build install --record /home/ariful/Urc26/science/science/build/joy_to_udp/install.log --single-version-externally-managed install_data
+[1.375s] running egg_info
+[1.376s] creating ../build/joy_to_udp/joy_to_udp.egg-info
+[1.388s] writing ../build/joy_to_udp/joy_to_udp.egg-info/PKG-INFO
+[1.388s] writing dependency_links to ../build/joy_to_udp/joy_to_udp.egg-info/dependency_links.txt
+[1.388s] writing entry points to ../build/joy_to_udp/joy_to_udp.egg-info/entry_points.txt
+[1.388s] writing requirements to ../build/joy_to_udp/joy_to_udp.egg-info/requires.txt
+[1.388s] writing top-level names to ../build/joy_to_udp/joy_to_udp.egg-info/top_level.txt
+[1.388s] writing manifest file '../build/joy_to_udp/joy_to_udp.egg-info/SOURCES.txt'
+[1.420s] reading manifest file '../build/joy_to_udp/joy_to_udp.egg-info/SOURCES.txt'
+[1.421s] writing manifest file '../build/joy_to_udp/joy_to_udp.egg-info/SOURCES.txt'
+[1.421s] running build
+[1.421s] running build_py
+[1.421s] creating /home/ariful/Urc26/science/science/build/joy_to_udp/build
+[1.421s] creating /home/ariful/Urc26/science/science/build/joy_to_udp/build/lib
+[1.421s] creating /home/ariful/Urc26/science/science/build/joy_to_udp/build/lib/joy_to_udp
+[1.421s] copying joy_to_udp/joy_udp.py -> /home/ariful/Urc26/science/science/build/joy_to_udp/build/lib/joy_to_udp
+[1.421s] copying joy_to_udp/__init__.py -> /home/ariful/Urc26/science/science/build/joy_to_udp/build/lib/joy_to_udp
+[1.422s] running install
+[1.427s] running install_lib
+[1.445s] creating /home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages/joy_to_udp
+[1.445s] copying /home/ariful/Urc26/science/science/build/joy_to_udp/build/lib/joy_to_udp/joy_udp.py -> /home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages/joy_to_udp
+[1.445s] copying /home/ariful/Urc26/science/science/build/joy_to_udp/build/lib/joy_to_udp/__init__.py -> /home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages/joy_to_udp
+[1.446s] byte-compiling /home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages/joy_to_udp/joy_udp.py to joy_udp.cpython-312.pyc
+[1.447s] byte-compiling /home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages/joy_to_udp/__init__.py to __init__.cpython-312.pyc
+[1.448s] running install_data
+[1.448s] creating /home/ariful/Urc26/science/science/install/joy_to_udp/share/ament_index
+[1.448s] creating /home/ariful/Urc26/science/science/install/joy_to_udp/share/ament_index/resource_index
+[1.448s] creating /home/ariful/Urc26/science/science/install/joy_to_udp/share/ament_index/resource_index/packages
+[1.448s] copying resource/joy_to_udp -> /home/ariful/Urc26/science/science/install/joy_to_udp/share/ament_index/resource_index/packages
+[1.448s] copying package.xml -> /home/ariful/Urc26/science/science/install/joy_to_udp/share/joy_to_udp
+[1.448s] running install_egg_info
+[1.469s] Copying ../build/joy_to_udp/joy_to_udp.egg-info to /home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages/joy_to_udp-0.0.0-py3.12.egg-info
+[1.470s] running install_scripts
+[1.575s] Installing joy_udp script to /home/ariful/Urc26/science/science/install/joy_to_udp/lib/joy_to_udp
+[1.575s] writing list of installed files to '/home/ariful/Urc26/science/science/build/joy_to_udp/install.log'
+[1.597s] Invoked command in '/home/ariful/Urc26/science/science/joy_to_udp' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ariful/Urc26/science/science/build/joy_to_udp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/joy_to_udp build --build-base /home/ariful/Urc26/science/science/build/joy_to_udp/build install --record /home/ariful/Urc26/science/science/build/joy_to_udp/install.log --single-version-externally-managed install_data

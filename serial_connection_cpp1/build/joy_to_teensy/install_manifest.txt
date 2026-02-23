@@ -1,0 +1,16 @@
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/lib/joy_to_teensy/joy_node
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/ament_index/resource_index/package_run_dependencies/joy_to_teensy
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/ament_index/resource_index/parent_prefix_path/joy_to_teensy
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/environment/ament_prefix_path.sh
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/environment/ament_prefix_path.dsv
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/environment/path.sh
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/environment/path.dsv
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/local_setup.bash
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/local_setup.sh
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/local_setup.zsh
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/local_setup.dsv
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/package.dsv
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/ament_index/resource_index/packages/joy_to_teensy
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/cmake/joy_to_teensyConfig.cmake
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/cmake/joy_to_teensyConfig-version.cmake
+/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/package.xml

@@ -1,0 +1,65 @@
+[0.014s] Invoking command in '/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ariful/ros2_ws/install/joystick_udp:/home/ariful/microros_ws/install/sensor_msgs_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ariful/Urc26/science/serial_connection_cpp1/src/joy_to_teensy -DCMAKE_INSTALL_PREFIX=/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy
+[0.138s] -- The C compiler identification is GNU 13.3.0
+[0.222s] -- The CXX compiler identification is GNU 13.3.0
+[0.247s] -- Detecting C compiler ABI info
+[0.367s] -- Detecting C compiler ABI info - done
+[0.378s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.379s] -- Detecting C compile features
+[0.380s] -- Detecting C compile features - done
+[0.394s] -- Detecting CXX compiler ABI info
+[0.517s] -- Detecting CXX compiler ABI info - done
+[0.526s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.527s] -- Detecting CXX compile features
+[0.527s] -- Detecting CXX compile features - done
+[0.551s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.795s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.985s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.073s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.097s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.132s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.151s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.200s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.328s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.335s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.497s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.530s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.565s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.660s] -- Found sensor_msgs: 5.3.6 (/home/ariful/microros_ws/install/sensor_msgs/share/sensor_msgs/cmake)
+[1.736s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.879s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.879s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ariful/Urc26/science/serial_connection_cpp1/src/joy_to_teensy/include>
+[1.879s] -- Configured cppcheck exclude dirs and/or files: 
+[1.882s] -- Added test 'lint_cmake' to check CMake code style
+[1.884s] -- Added test 'uncrustify' to check C / C++ code style
+[1.884s] -- Configured uncrustify additional arguments: 
+[1.886s] -- Added test 'xmllint' to check XML markup files
+[1.892s] -- Configuring done (1.9s)
+[1.921s] -- Generating done (0.0s)
+[1.929s] -- Build files have been written to: /home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy
+[1.947s] Invoked command in '/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ariful/ros2_ws/install/joystick_udp:/home/ariful/microros_ws/install/sensor_msgs_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ariful/Urc26/science/serial_connection_cpp1/src/joy_to_teensy -DCMAKE_INSTALL_PREFIX=/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy
+[1.949s] Invoking command in '/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ariful/ros2_ws/install/joystick_udp:/home/ariful/microros_ws/install/sensor_msgs_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy -- -j12 -l12
+[2.023s] [ 33%] [32mBuilding CXX object CMakeFiles/joy_node.dir/src/joy_node.cpp.o[0m
+[2.028s] [ 66%] [32mBuilding CXX object CMakeFiles/joy_node.dir/src/teensy_serial_backend.cpp.o[0m
+[4.709s] [100%] [32m[1mLinking CXX executable joy_node[0m
+[4.850s] [100%] Built target joy_node
+[4.867s] Invoked command in '/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ariful/ros2_ws/install/joystick_udp:/home/ariful/microros_ws/install/sensor_msgs_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy -- -j12 -l12
+[4.883s] Invoking command in '/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ariful/ros2_ws/install/joystick_udp:/home/ariful/microros_ws/install/sensor_msgs_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy
+[4.893s] -- Install configuration: ""
+[4.893s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/lib/joy_to_teensy/joy_node
+[4.893s] -- Set non-toolchain portion of runtime path of "/home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/lib/joy_to_teensy/joy_node" to ""
+[4.893s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/ament_index/resource_index/package_run_dependencies/joy_to_teensy
+[4.894s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/ament_index/resource_index/parent_prefix_path/joy_to_teensy
+[4.894s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/environment/ament_prefix_path.sh
+[4.894s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/environment/ament_prefix_path.dsv
+[4.894s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/environment/path.sh
+[4.894s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/environment/path.dsv
+[4.894s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/local_setup.bash
+[4.894s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/local_setup.sh
+[4.895s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/local_setup.zsh
+[4.895s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/local_setup.dsv
+[4.895s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/package.dsv
+[4.895s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/ament_index/resource_index/packages/joy_to_teensy
+[4.895s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/cmake/joy_to_teensyConfig.cmake
+[4.895s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/cmake/joy_to_teensyConfig-version.cmake
+[4.895s] -- Installing: /home/ariful/Urc26/science/serial_connection_cpp1/install/joy_to_teensy/share/joy_to_teensy/package.xml
+[4.896s] Invoked command in '/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ariful/ros2_ws/install/joystick_udp:/home/ariful/microros_ws/install/sensor_msgs_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy

@@ -1,0 +1,10 @@
+/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy/CMakeFiles/uninstall.dir
+/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy/CMakeFiles/joy_to_teensy_uninstall.dir
+/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy/CMakeFiles/joy_node.dir
+/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy/CMakeFiles/test.dir
+/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy/CMakeFiles/edit_cache.dir
+/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy/CMakeFiles/rebuild_cache.dir
+/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy/CMakeFiles/list_install_components.dir
+/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy/CMakeFiles/install.dir
+/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy/CMakeFiles/install/local.dir
+/home/ariful/Urc26/science/serial_connection_cpp1/build/joy_to_teensy/CMakeFiles/install/strip.dir

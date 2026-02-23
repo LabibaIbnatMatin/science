@@ -1,0 +1,22 @@
+running egg_info
+writing ../build/joy_to_udp/joy_to_udp.egg-info/PKG-INFO
+writing dependency_links to ../build/joy_to_udp/joy_to_udp.egg-info/dependency_links.txt
+writing entry points to ../build/joy_to_udp/joy_to_udp.egg-info/entry_points.txt
+writing requirements to ../build/joy_to_udp/joy_to_udp.egg-info/requires.txt
+writing top-level names to ../build/joy_to_udp/joy_to_udp.egg-info/top_level.txt
+reading manifest file '../build/joy_to_udp/joy_to_udp.egg-info/SOURCES.txt'
+writing manifest file '../build/joy_to_udp/joy_to_udp.egg-info/SOURCES.txt'
+running build
+running build_py
+copying joy_to_udp/joy_udp.py -> /home/ariful/Urc26/science/science/build/joy_to_udp/build/lib/joy_to_udp
+running install
+running install_lib
+copying /home/ariful/Urc26/science/science/build/joy_to_udp/build/lib/joy_to_udp/joy_udp.py -> /home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages/joy_to_udp
+byte-compiling /home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages/joy_to_udp/joy_udp.py to joy_udp.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages/joy_to_udp-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../build/joy_to_udp/joy_to_udp.egg-info to /home/ariful/Urc26/science/science/install/joy_to_udp/lib/python3.12/site-packages/joy_to_udp-0.0.0-py3.12.egg-info
+running install_scripts
+Installing joy_udp script to /home/ariful/Urc26/science/science/install/joy_to_udp/lib/joy_to_udp
+writing list of installed files to '/home/ariful/Urc26/science/science/build/joy_to_udp/install.log'
