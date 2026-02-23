@@ -1,4 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
+#include "joy_to_teensy/teensy_serial_backend.hpp"
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
@@ -8,6 +9,8 @@
 // --- DEFINITIONS (Edit these here) ---
 #define RECEIVE_PORT 5005
 #define RECEIVE_IP "0.0.0.0"  // Listen on all network interfaces
+#define SERIAL_PORT "/dev/teensy"
+#define SERIAL_BAUDRATE 115200
 
 class Joy : public rclcpp::Node {
 public:
@@ -32,7 +35,10 @@ public:
             return;
         }
 
-        // 2. Timer to check for UDP packets every 5ms
+        // 2. Serial Setup with Teensy
+        teensy_.setup(SERIAL_PORT, SERIAL_BAUDRATE);
+
+        // 3. Timer to check for UDP packets every 5ms
         timer_ = this->create_wall_timer(
             std::chrono::milliseconds(5), 
             std::bind(&Joy::udp_to_serial_loop, this)
@@ -48,6 +54,7 @@ public:
 private:
     int sockfd_;
     rclcpp::TimerBase::SharedPtr timer_;
+    TeensyComms teensy_;
 
     void udp_to_serial_loop() {
         char buffer[1024];
@@ -61,11 +68,8 @@ private:
             buffer[n] = '\0';
             std::string raw_cmd(buffer); 
 
-            // Forwarding to Serial (Make sure your Teensy backend logic is included)
-            RCLCPP_INFO(this->get_logger(), "UDP Recv: %s", raw_cmd.c_str());
-            
-            // NOTE: Insert your specific teensy_.send_msg(raw_cmd) call here 
-            // once you have linked your Serial backend header.
+            teensy_.send_msg(raw_cmd);
+            RCLCPP_INFO(this->get_logger(), "Sent: %s", raw_cmd.c_str());
         }
     }
 };
